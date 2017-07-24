@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Blog</title>
+  <link href="https://fonts.googleapis.com/css?family=Damion|Droid+Serif:400,400i,700|Montserrat&amp;subset=latin-ext" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div>
+    <header class="top-nav">
+      <nav class="container">
+        <ul class="nav">
+          <li clas="nav-item">
+            <a href="/">Home</a>
+          </li>
+          <li clas="nav-item">
+            <a href="/about">About</a>
+          </li>
+        </ul>
+        <ul class="nav">
+          <li clas="nav-item">
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <i data-feather="twitter"></i>
+            </a>
+          </li>
+          <li clas="nav-item">
+            <a href="https://facebook.com/{{ site.facebook_username }}">
+              <i data-feather="facebook"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <div class="brand">
+        {{ site.title }}
+      </div>
+      {{ content }}
+    </main>
+  </div>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="/assets/js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+</body>
+</html>

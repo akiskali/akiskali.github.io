@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+<article class="post card">
+  <img src="{{ page.featured_img_url }}">
+  <div class="card-content">
+    <h3>{{ page.title }}</h3>
+    <small>{{ page.date | date: "%b %d, %Y" }}</small>
+    {{ content }}
+  </div>
+  <div class="card-footer">
+    <span></span>
+    <a href="#">
+      <i data-feather="share-2"></i>
+    </a>
+  </div>
+</article>
